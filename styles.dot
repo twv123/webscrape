@@ -1,1 +1,1 @@
-!define nodeStyles node [shape=box, style="rounded,filled", fillcolor=lightblue]
+!define nodeStyles node  [shape=box, style="rounded,filled", fillcolor=lightblue]
