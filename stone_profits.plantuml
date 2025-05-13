@@ -1,0 +1,32 @@
+@startuml f
+
+skinparam linetype polyline
+'skinparam linetype ortho
+
+namespace HOME #DDDDDD  {
+
+  object "**Purchasing Home**" as PurchasingHome  {
+    POs
+    Supplier_Invoices
+    Inventory_Returns
+    Non_Inventory_Bills
+    '[[http://google.com Google]]
+  }
+}
+
+
+
+namespace PURCHASING_HOMES #DDDDDD  {
+
+  object "**POs**" as POs  {
+    All_POs 
+    Open_POs
+  }
+  
+}
+
+PurchasingHome::POs o--> POs::All_POs
+
+
+
+@enduml
